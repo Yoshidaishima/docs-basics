@@ -68,7 +68,7 @@ flowchart LR
 
   oa --5. 300b deal--> or
   or --6. 10s of billions purchase--> n
-  n --Invest ~100b provided OpenAI buys more chips--> oa
+  n --7. Invest ~100b provided OpenAI buys more chips--> oa
   
 
 ```
