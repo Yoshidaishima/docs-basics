@@ -9,11 +9,11 @@ flowchart LR
   a["`Intel
   AMD
   Nvidea`"]
-  b["`OpenAI
+  b((("OpenAI
   XAI
-  Microsoft`"]
-  c["`Oracle
-  Coreweave`"]
+  Microsoft")))
+  c@{ shape: cyl, label: "Oracle
+  Coreweave"}
 
   a <--> b
   b <--> c
@@ -26,14 +26,14 @@ title: Flow of Capital
 ---
 flowchart LR
 
-  i[Intel]
-  a[AMD]
-  n[Nvidia]
-  or[Oracle]
-  oa[OpenAI]
-  x[XAI]
-  m[Microsoft]
-  c[Coreweave]
+  i(Intel)
+  a(AMD)
+  n(Nvidia)
+  or(Oracle)
+  oa(OpenAI)
+  x(XAI)
+  m(Microsoft)
+  c(Coreweave)
 
 
   subgraph Data Centers
