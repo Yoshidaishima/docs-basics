@@ -21,11 +21,14 @@ flowchart LR
 
 ```
 ``` mermaid
+---
+title: Flow of Capital
+---
 flowchart LR
 
   i[Intel]
   a[AMD]
-  n[Nvidea]
+  n[Nvidia]
   or[Oracle]
   oa[OpenAI]
   x[XAI]
@@ -33,33 +36,39 @@ flowchart LR
   c[Coreweave]
 
 
-  subgraph Data Centers : Purchase chips & lease compute
-    direction TB
-    or
-    c
+  subgraph Data Centers
+    subgraph Purchase chips & Lease
+      direction TB
+      or
+      c
+    end
   end
 
-  subgraph Chip Design & Manufacturing
-    direction TB
-    i
-    a
-    n
+  subgraph Chip Design
+    subgraph & Manufacturing
+      direction TB
+      i
+      a
+      n
+    end
   end
 
   subgraph Purchasers chips
-    direction TB
-    oa
-    x
+    subgraph -
+      direction TB
+      oa
+      x
+    end
   end
 
   m --1. 58b investment--> oa
   oa --2. 58b to use data centers --> m
   m --3. 58b for chips--> n
-  n --4. 58b invest--> oa
+  n --4. 58b investment--> oa
 
   oa --5. 300b deal--> or
   or --6. 10s of billions purchase--> n
-  n --Invest ~100b provided OpenAi buys more chips--> op
+  n --Invest ~100b provided OpenAI buys more chips--> oa
   
 
 ```
