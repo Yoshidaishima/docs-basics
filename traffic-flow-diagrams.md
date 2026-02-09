@@ -1,6 +1,6 @@
 # Basic trafic diagrams
 ### Example system
-Note returning data is often unlabled & implied
+Note returning data is marked with a dotted line, often unlabled & implied
 ```mermaid
 flowchart LR
   user --> web
